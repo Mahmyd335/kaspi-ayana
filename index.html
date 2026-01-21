@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaspi</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Название на домашнем экране -->
+<meta name="apple-mobile-web-app-title" content="Kaspi">
+
+<!-- Полноэкранный режим -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Цвет статус-бара -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Иконки для iOS -->
+<link rel="apple-touch-icon" href="/img/icon-192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/img/icon-512.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/kaspi.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Kaspi">
+
+
+  <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+
+  
+
+</head>
+<body>
+
+<div class="con">
+  <div class="header">
+    <div class="header-section">
+      <section class="header-section1">
+        <img src="img/image 1.png">
+        <p>Удостоверение личности</p>
+      </section>
+      <section class="header-section2">
+        <div class="header-block">
+          <div id="btn1" class="block1">Документ</div>
+          <div id="btn2" class="block2">Реквизиты</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="con-section">
+    <img src="img/image 3.png">
+    <img src="img/image 2.png">
+  </section>
+
+  <footer class="footer">
+    <div id="footerBtn1" class="footer-btn1">
+      <img src="img/qr.png">
+      <p>Предъявить документ</p>
+    </div>
+    <div id="footerBtn2" class="footer-btn2">
+      <img src="img/inbox-out.png">
+      <p>Отправить документ</p>
+    </div>
+  </footer>
+
+  <div id="window" class="window">
+    <div class="window-block">
+      <p class="text1">Удостоверение личности</p>
+      <p class="text2">Покажите QR-код сотруднику</p>
+      <p class="text3">или скажите код</p>
+      <p class="text4">999999</p>
+      <img class="wind-img1" src="img/qr 2.png">
+      <img id="x" class="wind-img2" src="img/x.png">
+    </div>
+  </div>
+
+  <section id="section" class="section2">
+    <div class="section2-block">
+      <p class="block-text1">ФИО</p>
+      <p class="block-text2">Сұлтанова Аяна Махамбетқызы</p>
+      <img src="img/copy.png">
+    </div>
+    <div class="section2-block">
+      <p class="block-text1">ИИН</p>
+      <p class="block-text2">080723653845</p>
+      <img src="img/copy.png">
+    </div>
+    <div class="section2-block">
+      <p class="block-text1">Дата рождения</p>
+      <p class="block-text2">23.07.2008</p>
+      <img src="img/copy.png">
+    </div>
+    <div class="section2-block">
+      <p class="block-text1">Номер документа</p>
+      <p class="block-text2">060730501</p>
+      <img src="img/copy.png">
+    </div>
+    <div class="section2-block">
+      <p class="block-text1">Дата выдачи</p>
+      <p class="block-text2">22.09.2024</p>
+      <img src="img/copy.png">
+    </div>
+    <div class="section2-block">
+      <p class="block-text1">Срок действия</p>
+      <p class="block-text2">21.09.2034</p>
+      <img src="img/copy.png">
+    </div>
+
+    <footer class="footer">
+      <div id="footerBtn3" class="footer-btn2">
+        <img src="img/inbox-out.png">
+        <p>Поделиться реквизитами</p>
+      </div>
+    </footer>
+  </section>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Регистрация Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован'));
+  }
+</script>
+</body>
+</html>
